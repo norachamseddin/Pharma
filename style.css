@@ -5,28 +5,53 @@ ul.nav {
   text-align: center;
   font-family: "Rubik", Arial, sans-serif;
 }
-ul.nav > li {
+
+ul.nav>li {
   display: inline-block;
   padding: 20px;
 }
-ul.nav > li:hover {
+
+ul.nav>li:hover {
   background-color: white;
 }
-ul.nav > li > a {
+
+ul.nav>li>a {
   color: black;
   text-decoration: none;
 }
 
+.headerRow {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.headerColumn {
+  float: left;
+  padding: 0px 220px 30px 150px;
+  color: black;
+  backdrop-filter: transparent;
+
+}
+
+
+.cardli {
+  padding: 16px;
+  text-align: center;
+  display: inline;
+}
 
 /* Banner with background image (includes button and title) - Nora */
 
-.banner img{
+.banner img {
   width: 100%;
   height: 100%;
   margin-top: 90px;
 }
 
-.banner{
+.banner {
   position: relative;
   text-align: center;
   color: rgb(0, 0, 0);
@@ -39,20 +64,20 @@ ul.nav > li > a {
   color: white;
   left: 550px;
   top: 430px;
-  
+
 }
 
-.description{
+.description {
   font-size: 15px;
 }
 
-.welcome{
+.welcome {
   font-size: 60px;
   font-weight: bolder;
   padding-top: 15px;
 }
 
-.banner button{
+.banner button {
   background-color: aqua;
   border-radius: 5px;
   width: 180px;
@@ -81,10 +106,10 @@ body {
 
 /* Remove extra left and right margins, due to padding in columns */
 .row {
-    margin: auto;
-    display : flex;
-    align-items : center;
-    justify-content : center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Clear floats after the columns */
@@ -96,21 +121,24 @@ body {
 
 /* Style the counter cards */
 .card1 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
   background-color: #04bcea;
 }
 
 .card2 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
   background-color: #2fd10b;
 }
 
 .card3 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
   background-color: #d79c43;
@@ -138,4 +166,49 @@ body {
 
 
 /*Footer - Navya*/
+/* .footerClass- {
+    padding: 6em 0;
+} */
 
+.footerClass ul li {
+  margin-bottom: 10px;
+}
+
+.footerClass .footerP {
+  color: #5c626e;
+}
+
+.footerClass ul li a:hover {
+  color: #51eaea;
+}
+
+.footerClass .footer-heading {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.footerColumn {
+  float: left;
+  padding: 10px 10px 10px 0px;
+  color: black;
+  backdrop-filter: transparent;
+  width: 40%;
+
+}
+
+.footerRow {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactList {
+  color: #5c626e;
+}
+
+.footerCopyright {
+  color: #5c626e;
+  text-align: center;
+}
