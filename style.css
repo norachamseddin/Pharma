@@ -1,3 +1,23 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  color: black;
+  line-height: 1.7;
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+}
+
+
+
+
 /* Header (combined with the nav bar) - Navya*/
 ul.nav {
   padding-left: 0px;
@@ -131,7 +151,171 @@ body {
 
 /*New products (slider) - Bo*/
 
+
+* {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
+  color: black;
+  line-height: 1.7;
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-slider-container {
+  padding: 5rem 0;
+  background-color: #959596;
+
+}
+
+.inner-container {
+  width: 100%;
+  padding: 15px auto;
+
+}
+
+
+.carousel-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+} 
+
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.carousel__indicator {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  margin: 0 2px; 
+  background: rgb(0, 0, 0,0.3);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.prev:hover, .next:hover {
+  background-color: (0, 0, 0,0.3);
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+
+
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.carousel__button_nav {
+  position: relative;
+}
+.carousel__button--left {
+  left: 40px;
+}
+
+.carousel__button--right {
+  right: 40px;
+}
+
+.active, .carousel__indicator:hover {
+  background-color: aqua;
+}
+
+
+
+.title-row h1 {
+  position: relative;
+  padding: 30px 30px;
+  text-align: center;
+
+} 
+
+.product-name, .price {
+  position: relative;
+  text-align: center;
+
+}
+
+
+
+.productSlide {
+  display: inline-block;
+  /* display: none; */
+  
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: 400;
+  transition: 0.6s ease;
+  border-radius: 0  3px 3px 0;
+  user-select: none;
+}
+
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: contain;
+
+}
+
+
+
+
+
 /*Testimonials (grab the words and scroll through) - Bo*/
+
+.blockquote.img {
+  width: 25%;
+  margin: 1.5rem;
+  border: 1.5rem;
+  vertical-align: middle;
+
+}
+.quote {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.person-name {
+  font-weight: 500;
+  color: #8c92a0;
+}
 
 
 /*Cards (two within a container) - Nora*/
