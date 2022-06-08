@@ -93,6 +93,43 @@ ul.nav {
 
 /*Product list (including the product image and the buttons{href}) - Abdul*/
 
+.product-list {
+    background-color: white;
+    padding: 3em;
+  }
+  
+  .product-list .productitem {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    font-family: "Poppins";
+  }
+  
+  .productitem .title {
+    color : black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .productitem img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .productitem .text {
+    color : black;
+    text-align: center;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    font-size: 12px;
+  }
+
+  .align-center {
+    color : Black;
+    text-align: center;
+  }
+
 
 /*New products (slider) - Bo*/
 
