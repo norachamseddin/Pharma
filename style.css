@@ -89,49 +89,75 @@ ul.nav {
 
 .product-list {
     background-color: white;
-    padding: 3em;
+    padding: 0.3em;
   }
   
   .product-list .productitem {
     background-color: white;
     border-radius: 10px;
-    padding: 1em;
+    padding: 0.5em;
     text-align: center;
-    font-family: "Poppins";
+    font-family: "Grota Sans";
   }
   
   .productitem .title {
     color : black;
-    font-size: 18px;
+    font-size: 100px;
     font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   .productitem img {
-    max-width: 100%;
-    border-radius: 5px;
+      text-align: center;
+    max-width: 110%;
   }
   
   .productitem .text {
     color : black;
     text-align: center;
-    margin-left: 2em;
     margin-bottom: 0.5em;
-    font-size: 12px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .align-center {
     color : Black;
     text-align: center;
   }
-  .button1 {
-    background-color: #69e0f2; /* Green */
-    border: none;
-    color: white;
+  .buttonboy {
+    background-color: aqua;
+    border-radius: 5px;
+    width: 180px;
+    height: 60px;
+    border-color: aqua;
+    margin: 30px;
+    color: black;
     text-align: center;
     margin: auto;
     display: flex;
-    padding: 15px 32px;
-    font-size: 16px;
+    text-align: center;
+    padding: 17px 10px 10px 20px;
+    font-size: 13.8px;
+  }
+
+  .buttonboy:hover {
+    background-color: transparent;
+    color: rgb(82, 229, 255);
+    transition: 0.5s;
+}
+
+  .product-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 2px;
+  }
+
+  .vertical {
+    color : black;
+    writing-mode: tb-rl;
+    text-orientation: sideways-right;
+    display: flex;
   }
 
 /*New products (slider) - Bo*/
