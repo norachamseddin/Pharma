@@ -102,8 +102,13 @@
   border-radius: 5px;
   width: 180px;
   height: 60px;
-  border: 0px;
+  border-color: aqua;
   margin: 30px;
+}
+
+.a:hover{
+  background: transparent;
+  color: aqua;
 }
 
 /* Cards (three within a container) - Abdul*/
@@ -186,9 +191,6 @@ body {
 
 
 /*Footer - Navya*/
-/* .footerClass- {
-    padding: 6em 0;
-} */
 
 .footerClass ul li {
   margin-bottom: 10px;
