@@ -132,6 +132,41 @@ html, body {
   color: aqua;
 }
 
+/* Second Bannner - Nora*/
+
+.banner2{
+  background-color: aqua;
+  height: 25rem;
+  width: 100%;
+
+}
+
+.card-one{
+  background-color: lightgrey;
+  height: 17rem;
+  width: 70rem;
+  border-radius: 10px;
+  margin: 2.5rem;
+  margin-bottom: 2.5rem;
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  position: relative;
+}
+
+.card-one:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: translate(0, -10px);
+}
+
+.align{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Cards (three within a container) - Abdul*/
 
 /* * {
