@@ -2,12 +2,16 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
 </head>
 
 <body>
@@ -101,6 +105,131 @@
   </div>
 
 
+    <!-- Product Swiper -->
+    <div class="swiper productSwiper carousel-product-section">
+      <div class="swiper-wrapper carousel-content">
+          <div class="swiper-slide carousel-card">
+              <div class="carousel-card-content" align="center">
+                  <div class="carousel-image">
+                      <a href="#"><img src="assets/product_01.png" alt=""><h3>Product</h3></a>
+                      <p class="price">$$$</p>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="swiper-slide carousel-card">
+              <div class="carousel-card-content" align="center">
+                  <div class="carousel-image">
+                      <a href="#"><img src="assets/product_02.png" alt=""><h3>Product</h3></a>
+                      <p class="price">$$$</p>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="swiper-slide carousel-card">
+              <div class="carousel-card-content" align="center">
+                  <div class="carousel-image">
+                      <a href="#"><img src="assets/product_03.png" alt=""><h3>Product</h3></a>
+                      <p class="price">$$$</p>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="swiper-slide carousel-card">
+              <div class="carousel-card-content" align="center">
+                  <div class="carousel-image">
+                      <a href="#"><img src="assets/product_04.png" alt=""><h3>Product</h3></a>
+                      <p class="price">$$$</p> 
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+
+        <!-- Testimony Swiper -->
+  <div class="swiper testimonySwiper testimony-product-section">
+      <div class="swiper-wrapper testimony-content">
+          <div class="swiper-slide testimony-card">
+            
+              <div class="testimony-card-content">
+
+                  <div class="testimony-image">
+                      <img src="assets/person_1.jpeg" alt="Avatar">
+                  </div>
+                  <div class="blockquote-textbox">
+                      <p> "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam repellendus vero modi voluptate harum reiciendis temporibus illum dignissimos!"
+                      </p>
+                      <p class="name">&mdash; Person Name</p>
+                  </div>    
+
+              
+              </div>
+          </div>
+        
+        
+          <div class="swiper-slide testimony-card">
+            
+              <div class="testimony-card-content">
+
+                  <div class="testimony-image">
+                      <img src="assets/person_2.jpeg" alt="Avatar">
+                  </div>
+                  <div class="blockquote-textbox">
+                      <p> "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam repellendus vero modi voluptate harum reiciendis temporibus illum dignissimos!"
+                      </p>
+                      <p class="name">&mdash; Person Name</p>
+                  </div>    
+
+              
+              </div>
+          </div>
+        
+          <div class="swiper-slide testimony-card">
+            
+              <div class="testimony-card-content">
+
+                  <div class="testimony-image">
+                      <img src="assets/person_3.jpeg" alt="Avatar">
+                  </div>
+                  <div class="blockquote-textbox">
+                      <p> "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam repellendus vero modi voluptate harum reiciendis temporibus illum dignissimos!"
+                      </p>
+                      <p class="name">&mdash; Person Name</p>
+                  </div>    
+
+              
+              </div>
+          </div>
+        
+          <div class="swiper-slide testimony-card">
+            
+              <div class="testimony-card-content">
+
+                  <div class="testimony-image">
+                      <img src="assets/person_4.jpeg" alt="Avatar">
+                  </div>
+                  <div class="blockquote-textbox">
+                      <p> "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium magnam repellendus vero modi voluptate harum reiciendis temporibus illum dignissimos!"
+                      </p>
+                      <p class="name">&mdash; Person Name</p>
+                  </div>    
+
+              
+              </div>
+          </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
 
   <!--  Footer: Navya-->
   <footer class="footerClass">
@@ -160,6 +289,46 @@
     </div>
   </footer>
   <!-- Footer  -->
+
+
+  <script src="script.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Product Swiper -->
+  <script>
+    var swiper = new Swiper(".productSwiper", {
+      slidesPerView: 3,
+      spaceBetween: 0,
+      slidesPerGroup: 2,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  
+  <!-- Testimonial Swiper -->
+  <script>
+      var swiper = new Swiper(".testimonySwiper", {
+          slidesPerView: 3,
+          slidesPerGroup: 2,
+          centeredSlides: true,
+          spaceBetween: 0,
+          grabCursor: true,
+          pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          },
+      });
+  </script>
 
 
 </body>
